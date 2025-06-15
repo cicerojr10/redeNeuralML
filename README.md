@@ -73,7 +73,7 @@ Este projeto abrangeu diversas áreas fundamentais, incluindo:
 
 ## 5. Resultados e Conclusões (do Ponto Atual) 📈
 
-Ao longo de várias iterações de treinamento e ajuste de hiperparâmetros (arquitetura da rede, taxas de dropout, estratégias de data augmentation, taxa de aprendizado, callbacks), o modelo alcançou uma **acurácia de validação máxima de 82.50%**.
+Ao longo de várias iterações de treinamento e ajuste de hiperparâmetros (arquitetura da rede, taxas de dropout, estratégias de data augmentation, taxa de aprendizado, callbacks), o modelo alcançou uma **acurácia de validação máxima de 85%**.
 
 O processo demonstrou a importância:
 * Da qualidade e preparação dos dados.
