@@ -79,13 +79,11 @@ with tab1:
                     # Exibe o resultado
                     st.success(f"**Resultado:** A imagem é um **{predicted_class}** com **{confidence:.2f}%** de confiança.")
 
-# SUBSTITUA O BLOCO 'with tab2:' INTEIRO POR ESTE:
-
 with tab2:
     st.header("Análise de Performance do Modelo")
     st.write("Resultados visuais obtidos durante a fase de treinamento e validação do modelo.")
     
-    st.markdown("---") # Adiciona uma linha divisória para organizar
+    st.markdown("---") 
 
     try:
         # Imagem 1: Acurácia e Perda
@@ -93,7 +91,7 @@ with tab2:
         st.image(
             'images/imagem1.png', 
             caption='Este gráfico mostra como a acurácia do modelo aumentou e o erro (perda) diminuiu a cada época de treinamento.', 
-            use_column_width=True
+            use_container_width=True # <-- CORRIGIDO
         )
 
         # Imagem 2: Matriz de Confusão
@@ -101,7 +99,7 @@ with tab2:
         st.image(
             'images/imagem2.png', 
             caption='A matriz de confusão demonstra o desempenho do modelo para classificar corretamente cada classe nos dados de teste.', 
-            use_column_width=True
+            use_container_width=True # <-- CORRIGIDO
         )
 
         # Imagem 3: Taxa de Aprendizado
@@ -109,7 +107,7 @@ with tab2:
         st.image(
             'images/imagem3.png', 
             caption='Este gráfico mostra como a taxa de aprendizado foi ajustada dinamicamente durante o treinamento para otimizar a convergência.', 
-            use_column_width=True
+            use_container_width=True # <-- CORRIGIDO
         )
 
     except FileNotFoundError as e:
